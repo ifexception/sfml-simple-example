@@ -1,9 +1,9 @@
-# Set the CMake version
 cmake_minimum_required(VERSION 3.6)
-# Project name (executable name)
 project(simple_sfml)
 
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
+set(CMAKE_MODULE_PATH
+    "${CMAKE_SOURCE_DIR}/cmake_modules"
+     ${CMAKE_MODULE_PATH})
 
 find_package(SFML 2.4.2 REQUIRED system window graphics)
 
